@@ -1,0 +1,17 @@
+[package]
+name = "psyverse_bounty_hunter"
+version = "0.1.0"
+edition = "2021"
+description = "A minimal Rust CLI that scans GitHub for issues with bounty tags."
+license = "MIT"
+repository = "https://github.com/gewenbo888/psyverse-posts"
+
+[dependencies]
+tokio = { version = "1.34", features = ["full"] }
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+
+[dev-dependencies]
+assert_cmd = "2.0"
